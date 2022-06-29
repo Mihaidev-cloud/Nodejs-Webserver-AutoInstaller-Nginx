@@ -24,7 +24,7 @@ echo "Ok good bye!"
 exit
 fi
 
-sudo apt-get install sudo
+
 sudo apt update -y
 sudo apt upgrade -y
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
