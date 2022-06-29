@@ -36,7 +36,7 @@ npm -v
 sudo npm i pm2 -g
 pm2 startup ubuntu
 
-echo pm2 has been download type exemple: pm2 start "npm run dev" or pm2 start app.js
+echo pm2 has been download type example: pm2 start "npm run dev" or pm2 start app.js
 
 sudo ufw enable 
 sudo ufw status
@@ -190,7 +190,7 @@ sudo certbot --nginx -d $yourdomain  -d $subdomain
 
 certbot renew --dry-run
 
-echo "done now check your website! , created by Mihaidev-Cloud!"
+echo "done now check your website! to run the nodejs type this, example: pm2 start "npm run dev" or pm2 start app.js , created by Mihaidev-Cloud!"
 
 else
 
