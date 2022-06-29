@@ -1,4 +1,4 @@
-# Nodejs-Webserver-Automatic
+# Nodejs-Webserver-AutoInstaller-Nginx
 A bash script that executes installation of nodejs webserver using nginx 
 
 
