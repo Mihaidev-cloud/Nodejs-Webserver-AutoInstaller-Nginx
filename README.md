@@ -11,7 +11,7 @@ wget https://cdn.mihaidev.xyz/install.sh
 
 sh install.sh
 
-Don't forget to run it any administrator! using sudo su - 
+'Don't forget to run it any administrator! using sudo su' - 
 ```
 
 
