@@ -38,14 +38,7 @@ pm2 startup ubuntu
 
 echo pm2 has been download type example: pm2 start "npm run dev" or pm2 start app.js
 
-sudo ufw enable 
-sudo ufw status
-echo your port
-read port
-sudo ufw allow $port
-sudo ufw allow ssh 
-sudo ufw allow http 
-sudo ufw allow https 
+
 
 sudo apt install nginx -y
 
@@ -172,8 +165,8 @@ if [ "$yes" ]; then
 
 echo "installing certbot for free certificate ssl"
 
-sudo add-apt-repository ppa:certbot/certbot
-sudo apt-get update
+
+
 sudo apt-get install python3-certbot-nginx
 
 
