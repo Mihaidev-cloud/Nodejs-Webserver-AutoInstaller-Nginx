@@ -7,7 +7,7 @@ Only for ubuntu and debian yet
 
 ```bash
 
-wget https://cdn.mihaidev.xyz/install.sh
+git clone https://github.com/Mihaidev-cloud/Nodejs-Webserver-AutoInstaller-Nginx.git
 
 sh install.sh
 
