@@ -115,10 +115,10 @@ server {
         # Add index.php to the list if you are using PHP
         index index.html index.htm index.nginx-debian.html;
 
-        server_name mihaidev-cloud.tk www.mihaidev-cloud.tk;
+        server_name $yourdomain $subdomain;
 
         location / {
-          proxy_pass http://localhost:5000; #whatever port your app runs on
+          proxy_pass http://localhost:$port; #whatever port your app runs on
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection 'upgrade';
