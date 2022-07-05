@@ -30,7 +30,7 @@ sudo apt upgrade -y
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install nodejs -y 
 
-sudo apt-get install -y npm 
+sudo apt-get install npm -y 
 node --version
 npm -v
 sudo npm i pm2 -g
