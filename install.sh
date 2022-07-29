@@ -149,6 +149,8 @@ server {
 
 " >> /etc/nginx/sites-available/default
 
+sudo apt install ufw
+
 sudo ufw allow 'Nginx Full'
 
 sudo nginx -t
