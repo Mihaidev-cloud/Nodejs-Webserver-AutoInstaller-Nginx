@@ -153,6 +153,10 @@ sudo apt install ufw
 
 sudo ufw allow 'Nginx Full'
 
+sudo ufw allow ssh
+sudo ufw allow http
+sudo ufw allow https
+
 sudo nginx -t
 
 sudo service nginx restart
