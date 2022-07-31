@@ -38,6 +38,15 @@ pm2 startup ubuntu
 
 echo pm2 has been download type example: pm2 start "npm run dev" or pm2 start app.js
 
+sudo apt install ufw
+
+sudo ufw enable
+
+sudo ufw allow 'Nginx Full'
+
+sudo ufw allow ssh
+sudo ufw allow http
+sudo ufw allow https
 
 
 sudo apt install nginx -y
@@ -148,8 +157,6 @@ server {
 #}
 
 " >> /etc/nginx/sites-available/default
-
-sudo ufw allow 'Nginx Full'
 
 sudo nginx -t
 
