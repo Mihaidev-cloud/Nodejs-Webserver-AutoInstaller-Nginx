@@ -3,7 +3,7 @@ A bash script that executes installation of nodejs webserver using nginx
 
 
 Only for ubuntu and debian yet
-
+added alternative firewall for oracle cloud vps!
 
 ```bash
 
