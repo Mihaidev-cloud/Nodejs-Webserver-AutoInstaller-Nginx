@@ -8,9 +8,11 @@
 
 echo "Welcome to installation!"
 
+echo "Created by Mihaidev-Cloud 2022! , the project is open-source"
+
 echo "open this with sudo su- "
 
-echo "Attention , nginx doesn't configure a folder for project in nodejs because it can be deployed and run in any location!"
+echo "Attention ,if you got an oracle cloud vps make sure you add the ingres rules (ports like: 80, 443, 22 and more),  nginx doesn't configure a folder for project in nodejs because it can be deployed and run in any location!"
 
 
 echo "are you agree to install? type yes or press enter to cancel"
@@ -36,7 +38,11 @@ npm -v
 sudo npm i pm2 -g
 pm2 startup ubuntu
 
-echo pm2 has been download type example: pm2 start "npm run dev" or pm2 start app.js
+echo "pm2 has been download type example: pm2 start "npm run dev" or pm2 start app.js"
+
+
+
+
 
 sudo apt install ufw
 
