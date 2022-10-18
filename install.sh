@@ -8,9 +8,9 @@
 
 echo "Welcome to installation!"
 
-echo "open this with sudo su"
+echo "open this with sudo su- "
 
-
+echo "Attention , nginx doesn't configure a folder for project in nodejs because it can be deployed and run in any location!"
 
 
 echo "are you agree to install? type yes or press enter to cancel"
@@ -69,11 +69,11 @@ echo the port of nodejs file
 
 read port
 
-echo "type here (".http_upgrade but replace "." with dollar sign!")"
+echo "type here (".http_upgrade but replace "." with dollar sign!" "example: $http_upgrade")"
 
 read http_upgrade
 
-echo "type here (".host but replace "." with dollar sign!")"
+echo "type here (".host but replace "." with dollar sign!" "example: $http_host")"
 
 read host
 
