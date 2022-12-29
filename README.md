@@ -11,7 +11,7 @@ git clone https://github.com/Mihaidev-cloud/Nodejs-Webserver-AutoInstaller-Nginx
 
 sh install.sh for domains 
 
-sh subdomains for subdomains only!
+sh subdomain for subdomains only!
 
 'Don't forget to run it any administrator! using sudo su' - 
 
