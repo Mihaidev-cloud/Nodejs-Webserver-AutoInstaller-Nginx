@@ -9,6 +9,8 @@ added alternative firewall for oracle cloud vps!
 
 git clone https://github.com/Mihaidev-cloud/Nodejs-Webserver-AutoInstaller-Nginx.git
 
+cd Nodejs-Webserver-AutoInstaller-Nginx
+
 sh install.sh for domains 
 
 sh subdomain for subdomains only!
