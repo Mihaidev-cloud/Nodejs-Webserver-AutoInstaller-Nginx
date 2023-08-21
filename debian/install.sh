@@ -38,7 +38,7 @@ if [ "$choice" = "y" ]; then
 echo "Installing the latest Nodejs Version(v20.x)"
 curl -fsSL https://deb.nodesource.com/setup_20.x | bash - &&\
 apt-get install -y nodejs
-apt-get install -y npm
+apt-get install  npm
 node --version
 npm -v
 
@@ -115,7 +115,7 @@ else
   echo "Failed to create Nginx configuration file '$config_filename'."
 fi
 
-echo "you can moidfy the server conf anytime you want!"
+echo "you can modify the server conf anytime you want!"
 
 echo "Testing the Nginx Configuration file"
 
@@ -163,7 +163,7 @@ elif [ "$choice3" = "n" ]; then
      echo "Created with love by mihaidev-cloud :3"
 else
     echo "Invalid choice. Please enter 'y' or 'n'."
-fi
+
 
 
 elif [ "$choice2" = "n" ]; then
@@ -258,12 +258,10 @@ elif [ "$choice3" = "n" ]; then
      echo "Created with love by mihaidev-cloud :3"
 else
     echo "Invalid choice. Please enter 'y' or 'n'."
-fi
 
 
 else
     echo "Invalid choice. Please enter 'y' or 'n'."
-fi
 
 
 
@@ -275,4 +273,4 @@ elif [ "$choice" = "n" ]; then
     exit 1
 else
     echo "Invalid choice. Please enter 'y' or 'n'."
-fi
+
