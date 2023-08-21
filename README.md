@@ -17,7 +17,7 @@ Version for RHEL Gonna come out soon!
 |                  | 22.04   | :white_check_mark: | Stable                                      |
 | Debian           | 8       | :red_circle: \*    |BUILD SYSTEM CURRENTLY BROKEN FOR NODEJS 18+ |
 |                  | 9       | :red_circle: \*    |BUILD SYSTEM CURRENTLY BROKEN FOR NODEJS 18+ |
-|                  | 10      | :red_circle: \*    | Stable                                      |
+|                  | 10      | :warning:          | Stable  not recommendable                   |
 |                  | 11      | :white_check_mark: | Stable                                      |
 |                  | 12      | :white_check_mark: | Stable                                      |
 
@@ -27,7 +27,7 @@ Version for RHEL Gonna come out soon!
 
 To use the installer script, simply run this command as root, human supervision needed! :warning:
 ```bash
-bash <(curl -s https://github.com/Mihaidev-cloud/Nodejs-Webserver-AutoInstaller-Nginx/debian/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/Mihaidev-cloud/Nodejs-Webserver-AutoInstaller-Nginx/main/debian/install.sh)
 ```
 
 _Note: On some systems, it's required to be already logged in as root before executing the one-line command (where `sudo` is in front of the command does not work)._
