@@ -82,6 +82,8 @@ sudo systemctl enable netfilter-persistent
  # Ask the user to enter the server name
 read -p "Enter the server name (e.g., example.com): " server_name
 
+mkdir /var/www/"$server_name"
+
 echo "Your Directory is /var/www/$server_name"
 
 # Create the Nginx configuration content
@@ -176,6 +178,9 @@ elif [ "$choice2" = "n" ]; then
  
  # Ask the user to enter the server name
 read -p "Enter the server name (e.g., example.com): " server_name
+
+
+mkdir /var/www/"$server_name"
 
 echo "Your Directory is /var/www/$server_name"
 
