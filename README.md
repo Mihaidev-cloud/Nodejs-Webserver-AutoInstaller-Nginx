@@ -6,7 +6,7 @@ is a bash script which supports **currently** debian based linux systems
 
 Version for RHEL Gonna come out soon!
 
-### Supported panel and wings operating systems
+### Supported Operating System based on Debian
 
 | Operating System | Version | Supported          | Reason                                      |
 | ---------------- | ------- | ------------------ | --------------------------------            |
