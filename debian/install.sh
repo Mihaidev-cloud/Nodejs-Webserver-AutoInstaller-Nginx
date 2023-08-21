@@ -10,49 +10,6 @@ fi
 
 echo "You are running this script as root!"
 
-echo "Installing the lsb-release package to detect the version of distro."
- apt-get update
- apt-get install lsb-release
-
-
-# Function to compare version numbers
-version_compare() {
-    # ... (same version_compare function as before) ...
-    # ... (no need to change this part) ...
-}
-
-# Get the version information
-distro_info=$(lsb_release -d)
-version=$(echo "$distro_info" | grep -oE '[0-9]+\.[0-9]+' | head -n1)
-
-# Check if the version is empty (if lsb_release command is unavailable)
-if [[ -z "$version" ]]; then
-    echo "Could not detect the version. Please make sure 'lsb_release' is installed."
-    exit 1
-fi
-
-# Define the minimum supported versions
-ubuntu_minimum_version="20.04"
-debian_minimum_version="10"
-
-# Compare the versions for Ubuntu 20.04 and Debian 10
-version_compare "$version" "$ubuntu_minimum_version"
-ubuntu_comparison_result=$?
-
-version_compare "$version" "$debian_minimum_version"
-debian_comparison_result=$?
-
-# Check if the detected version is smaller than Ubuntu 20.04 or Debian 10
-if [[ $ubuntu_comparison_result == 2 ]]; then
-    echo "Because of the nodejs support. Your Ubuntu version is older than Ubuntu 20.04. Exiting..."
-    exit 1
-elif [[ $debian_comparison_result == 2 ]]; then
-    echo "Because of the nodejs support. Your Debian version is older than Debian 10. Exiting..."
-    exit 1
-fi
-
-
-echo "Your Ubuntu/Debian version is equal to or newer than Ubuntu 20.04 and Debian 10. Continue with your script."
 
 
 cat << "EOF" 
