@@ -128,7 +128,7 @@ sudo systemctl restart nginx
 
 echo "Congratulations, the Nginx has been configured for the $server_name"
 
-read -p "Do you want free SSL certificates from certbot? " choice3
+read -p "Do you want free SSL certificates from certbot? (e.g., y/n) " choice3
 
 if [ "$choice3" = "y" ]; then
     # Put your scripts here that you want to execute when the user enters 'y'
@@ -210,7 +210,7 @@ else
   echo "Failed to create Nginx configuration file '$config_filename'."
 fi
 
-echo "you can moidfy the server conf anytime you want!"
+echo "you can modify the server conf anytime you want!"
 
 echo "Testing the Nginx Configuration file"
 
@@ -223,7 +223,7 @@ sudo systemctl restart nginx
 
 echo "Congratulations, the Nginx has been configured for the $server_name"
 
-read -p "Do you want free SSL certificates from certbot? " choice3
+read -p "Do you want free SSL certificates from certbot? (e.g., y/n) " choice3
 
 if [ "$choice3" = "y" ]; then
     # Put your scripts here that you want to execute when the user enters 'y'
