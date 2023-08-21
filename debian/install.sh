@@ -163,7 +163,7 @@ elif [ "$choice3" = "n" ]; then
      echo "Created with love by mihaidev-cloud :3"
 else
     echo "Invalid choice. Please enter 'y' or 'n'."
-
+fi
 
 
 elif [ "$choice2" = "n" ]; then
@@ -258,10 +258,12 @@ elif [ "$choice3" = "n" ]; then
      echo "Created with love by mihaidev-cloud :3"
 else
     echo "Invalid choice. Please enter 'y' or 'n'."
+fi
 
 
 else
     echo "Invalid choice. Please enter 'y' or 'n'."
+fi
 
 
 
@@ -273,4 +275,4 @@ elif [ "$choice" = "n" ]; then
     exit 1
 else
     echo "Invalid choice. Please enter 'y' or 'n'."
-
+fi
